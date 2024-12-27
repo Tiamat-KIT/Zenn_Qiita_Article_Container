@@ -20,5 +20,5 @@
   },
   "remoteUser": "utakata",
   "workspaceFolder": "/workspace",
-  "postCreateCommand": "bun -g install zenn-cli @qiita/qiita-cli && mkdir -p zenn qiita image"
+  "postCreateCommand": "bun -g install zenn-cli @qiita/qiita-cli && mkdir -p qiita image"
 }
