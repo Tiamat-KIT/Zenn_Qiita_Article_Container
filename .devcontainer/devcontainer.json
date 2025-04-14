@@ -10,7 +10,9 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "oven.bun-vscode"
+        "oven.bun-vscode",
+        "negokaz.zenn-editor",
+        "zenn.zenn-preview"
       ],
       "setting": {
         "terminal.integrated.shell.linux": "/bin/bash"
