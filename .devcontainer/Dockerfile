@@ -22,12 +22,12 @@ ENV CURL_CA_BUNDLE /etc/ssl/certs/ca-certificates.crt
 # Bunのインストール（utakataユーザーとして）
 USER ${USER_NAME}
 WORKDIR /workspace
-RUN curl -fsSL https://bun.sh/install | bash \
-    && echo 'export BUN_INSTALL="$HOME/.bun"' >> ~/.bashrc \
-    && echo 'export PATH=$BUN_INSTALL/bin:$PATH' >> ~/.bashrc \
-    && . ~/.bashrc
+# RUN curl -fsSL https://bun.sh/install | bash \
+#     && echo 'export BUN_INSTALL="$HOME/.bun"' >> ~/.bashrc \
+#     && echo 'export PATH=$BUN_INSTALL/bin:$PATH' >> ~/.bashrc \
+#     && . ~/.bashrc
 
-ENV PATH $BUN_INSTALL/bin:$PATH
+# ENV PATH $BUN_INSTALL/bin:$PATH
 
 RUN chown ${USER_NAME}:${USER_NAME} /workspace
 

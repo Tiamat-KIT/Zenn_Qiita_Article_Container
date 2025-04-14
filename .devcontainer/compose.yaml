@@ -1,9 +1,0 @@
-services:
-  article:
-    build: 
-      context: .
-    volumes: 
-      - ../workspace:/workspace
-    tty: true
-    user: utakata
-
