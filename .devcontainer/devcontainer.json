@@ -4,13 +4,21 @@
 	"name": "Node.js & TypeScript",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerFile": "Dockerfile",
-	"workspaceFolder": "/workspace", 
-	"workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind,consistency=cached",
+	// "workspaceFolder": "/workspace", 
+	// "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind,consistency=cached",
 	"onCreateCommand": "yarn add zenn-cli@latest",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/node:1":{}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"negokaz.zenn-editor",
+				"DavidAnson.vscode-markdownlint"
+			]
+		}
 	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
