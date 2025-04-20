@@ -1,0 +1,9 @@
+title: "Misskey鯖ホスティング本"
+summary: "Misskey鯖ホスティング本です。様々な立て方や、実際に運用したときの話などをまとめています。"
+topics: ["Misskey", "hosting", "server"]
+published: false
+price: 0 # 有料の場合200〜5000
+# 本に含めるチャプターを順番に並べましょう
+chapters:
+  - introduction
+  - example2
